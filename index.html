@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Z&M Clothing - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    .logo {
+      font-size: 48px;
+      font-weight: 900;
+      color: #3b2f2f;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 3px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10px;  /* Reduced padding for a more compact layout */
+    }
+
+    .hero-content {
+      max-width: 45%;  /* Adjusted to use more space for content */
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-content .btn {
+      background-color: #3b2f2f;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .hero-content .btn:hover {
+      background-color: #d7a74f;
+    }
+
+    /* Hero Image */
+    .hero-image {
+      width: 75%;  /* Adjusted width of the image to 55% */
+      height: auto;  /* Keeps the aspect ratio intact */
+      max-height: 500px; /* Limiting the height of the image */
+      object-fit: contain;  /* Ensures the full image is visible without cropping */
+    }
+
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-image {
+        width: 80%;  /* Reduced the image width to 80% on smaller screens */
+        max-height: 400px; /* Limit the height of the image for smaller screens */
+      }
+
+      .hero-content {
+        max-width: 100%;
+        margin-bottom: 20px; /* Adds some space below text content */
+      }
+    }
+  </style>
+</head>
+<body class="heritage">
+  <header class="navbar">
+    <div class="container" style="text-align: center;">
+      <div class="logo">Z&M Clothing</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unstitched Elegance. Everyday Style.</h1>
+      <a href="shop.html" class="btn">Shop Now</a>
+    </div>
+    <img class="hero-image" src="C:\Users\Administrator\Downloads\download (5).jpg" alt="Z&M Clothing Collection" />
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Z&M Clothing. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
