@@ -1,0 +1,184 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.heritage {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8e1;
+  color: #3b2f2f;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  background-color: #d9a7a0;
+  padding: 20px 0;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #3b2f2f;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #3b2f2f;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #8b0000;
+}
+
+.hero {
+  background-image: url('https://via.placeholder.com/1200x400/fff8e1/d40000?text=Elegant+Heritage');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #3b2f2f;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #d40000;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #a80000;
+}
+
+
+.featured {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 28px;
+  color: #3b2f2f;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.product {
+  width: 200px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.about-strip {
+  background-color: #f1e0d6;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-strip h3 {
+  font-size: 24px;
+  color: #d40000;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-strip ul {
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #3b2f2f;
+}
+
+
+.footer {
+  background-color: #d9a7a0;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #3b2f2f;
+}
+
+.socials a {
+  color: #3b2f2f;
+  margin: 0 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.socials a:hover {
+  color: #d40000;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 80%;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+}
