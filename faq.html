@@ -1,0 +1,122 @@
+<!--------Maryam Zaheer Khan(22008105030)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQs - Z&M Clothing</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .faq-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .faq-container h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      text-align: center;
+      color: #3b2f2f;
+      margin-bottom: 30px;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+      background-color: #fdf7ed;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .faq-question {
+      font-weight: bold;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #3b2f2f;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 10px;
+      color: #444;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .faq-container h1 {
+        font-size: 2rem;
+      }
+
+      .faq-question {
+        font-size: 1rem;
+      }
+
+      .faq-answer {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container" style="text-align: center;">
+      <div class="logo">Z&M Clothing</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="faq.html" class="active">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <div class="faq-question">What is your return policy?</div>
+      <div class="faq-answer">We offer easy 7-day returns on all unstitched items. Items must be in original condition with tags intact.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Do you ship internationally?</div>
+      <div class="faq-answer">Currently, we only ship within Pakistan. Stay tuned for international shipping updates!</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I get custom stitching?</div>
+      <div class="faq-answer">We do not offer stitching services at the moment. All items are unstitched and ready for your personal tailoring.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How can I contact support?</div>
+      <div class="faq-answer">You can reach us via our Contact page, Instagram DMs, or WhatsApp.</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Z&M Clothing. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        question.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
