@@ -1,0 +1,187 @@
+<!--------Maryam Zaheer Khan(22008105030)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Z&M Clothing</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Shop page layout */
+    .shop-header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .shop-header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .shop-header p {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .product {
+      flex: 1 1 250px;
+      max-width: 250px;
+      text-align: center;
+      padding: 15px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      box-sizing: border-box; 
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%; 
+      height: auto; 
+      max-height: 300px; 
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .product img:hover {
+      transform: scale(1.05);
+    }
+
+    .product-name {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #3b2f2f;
+    }
+
+    .product-price {
+      margin-top: 10px;
+      font-size: 1.3rem;
+      color: #d7a74f;
+      font-weight: 600;
+    }
+
+    .btn {
+      margin-top: 20px; 
+      background-color: #3b2f2f;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #d7a74f;
+    }
+
+    @media (max-width: 768px) {
+      .product {
+        flex: 1 1 220px;
+        max-width: 220px;
+      }
+      .product img {
+        max-height: 250px; 
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product {
+        flex: 1 1 150px;
+        max-width: 150px;
+      }
+      .product img {
+        max-height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container" style="text-align: center;">
+      <div class="logo">Z&M Clothing</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="shop-header">
+    <h1>Our Collection</h1>
+    <p>Discover the latest in elegant and stylish fashion. Explore our curated collection of handpicked clothing, from the timeless classics to the latest trends.</p>
+  </section>
+
+  <section class="product-grid">
+   
+    <div class="product">
+      <a href="festive-bloom-kurta.html">
+        <img src="images\download.jpg" alt="Festive Bloom Kurta" />
+      </a>
+      <p class="product-name">Festive Bloom Kurta</p>
+      <p class="product-price">₨ 2,499</p> 
+      <a href="festive-bloom-kurta.html" class="btn">View Product</a>
+    </div>
+
+    
+    <div class="product">
+      <a href="noor-lawn-set.html">
+        <img src="images/download (1).jpg" alt="Noor Lawn Set" />
+      </a>
+      <p class="product-name">Noor Lawn Set</p>
+      <p class="product-price">₨ 5,499</p> 
+      <a href="noor-lawn-set.html" class="btn">View Product</a>
+    </div>
+
+    
+    <div class="product">
+      <a href="zehra-shirt.html">
+        <img src="images/download (2).jpg" alt="Zehra Embroidered Shirt" />
+      </a>
+      <p class="product-name">Zehra Embroidered Shirt</p>
+      <p class="product-price">₨ 3,899</p> 
+      <a href="zehra-shirt.html" class="btn">View Product</a>
+    </div>
+
+    
+    <div class="product">
+      <a href="gulzar-dupatta.html">
+        <img src="images/Hand Painted Embellished Dupatta 🔥.jpg" alt="Gulzar Dupatta" />
+      </a>
+      <p class="product-name">Gulzar Dupatta</p>
+      <p class="product-price">₨ 2,099</p> 
+      <a href="gulzar-dupatta.html" class="btn">View Product</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Z&M Clothing. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
