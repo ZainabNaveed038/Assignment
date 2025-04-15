@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Z&M Clothing - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    header .logo {
+      font-size: 48px;
+      font-weight: 900;
+      color: #3b2f2f;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 3px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 10px;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      flex: 1 1 40%;
+      padding: 20px;
+      max-width: 500px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-content .btn {
+      background-color: #3b2f2f;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .hero-content .btn:hover {
+      background-color: #d7a74f;
+    }
+
+    .hero-image {
+      flex: 1 1 60%;
+      padding: 20px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      max-height: 450px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-image img {
+        max-height: 350px;
+      }
+    }
+  </style>
+</head>
+<body class="heritage">
+  <header class="navbar">
+    <section style="text-align: center;">
+      <h1 class="logo">Z&M Clothing</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section class="hero">
+      <article class="hero-content">
+        <h1>Unstitched Elegance. Everyday Style.</h1>
+        <a href="shop.html" class="btn">Shop Now</a>
+      </article>
+      <figure class="hero-image">
+        <img src="images/download (5).jpg" alt="Z&M Clothing Collection" />
+      </figure>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section>
+      <p>&copy; 2025 Z&M Clothing. All rights reserved.</p>
+      <nav class="socials">
+        <a href="#">Instagram</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">WhatsApp</a>
+      </nav>
+    </section>
+  </footer>
+</body>
+</html>
